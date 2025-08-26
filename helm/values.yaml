@@ -1,4 +1,4 @@
-ingress-nginx:
+ingressnginx:
   controller:
     replicaCount: 2
     ingressClass: nginx

@@ -4,7 +4,8 @@ metadata:
   name: argocd-ingress
   namespace: argocd
   annotations:
-    argocd.argoproj.io/sync-wave: "{{ index .Values "ingress-nginx" "argocdIngress" "syncWave" | quote }}"
+    # argocd.argoproj.io/sync-wave: "{{ index .Values "ingress-nginx" "argocdIngress" "syncWave" | quote }}"
+    argocd.argoproj.io/sync-wave: "{{ .Values.ingressnginx.argocdIngress.syncWave }}"
 spec:
   ingressClassName: nginx
   rules:

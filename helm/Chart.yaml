@@ -10,5 +10,6 @@ appVersion: "4.13.1"
 
 dependencies:
   - name: ingress-nginx
+    alias: ingressnginx
     version: 4.13.1
     repository: https://kubernetes.github.io/ingress-nginx
